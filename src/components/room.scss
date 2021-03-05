@@ -10,7 +10,15 @@
   width: 200px;
 
   &.-open {
-    background: #2ecc71;
+    background: #4169e1;
+  }
+
+  &.-open-man {
+    background: #4169e1;
+  }
+  
+  &.-open-woman {
+    background: #ff69b4;
   }
 
   &.-close {
