@@ -1,7 +1,8 @@
 import React, { FC, useEffect } from "react";
 
 import Room, { RoomProps } from "./room";
-import "./rooms.scss";
+// TODO 作る
+// import "./floors.scss";
 import { SSL_OP_NO_TLSv1_1 } from "constants";
 
 export interface RoomsProps {
@@ -29,8 +30,10 @@ const Rooms: FC<RoomsProps> = ({
 
   // 階数の大きい順でソート
   const sorted = rooms.slice().sort((n1,n2) => {
+    // undfindでエラーになる謎
     // if (n2.floor > n1.floor) return 1;
     // if (n2.floor < n1.floor) return -1;
+    
 
     return 0;
 

@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import { ThunkDispatch } from "redux-thunk";
 
 import { getRooms } from "../actions/rooms";
-import Rooms from "../components/rooms";
+import Floors from "../components/floors";
 import { RootState } from "../reducer";
 import { RoomState } from "../constants";
 
@@ -27,4 +27,4 @@ const mapDispatchToProps = (
   getRooms: locationName => dispatch(getRooms(locationName))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Rooms);
+export default connect(mapStateToProps, mapDispatchToProps)(Floors);

@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "./containers/header";
 import SideMenu from "./containers/side-menu";
-import Rooms from "./containers/rooms";
+import Floors from "./containers/floors";
 import Message from "./containers/message";
 import Overlay from "./containers/overlay";
 
@@ -12,7 +12,7 @@ const App: React.FC = () => {
       <Header />
       <Message />
       <div className="Main">
-        <Rooms />
+        <Floors />
         <SideMenu />
       </div>
       <Overlay />
