@@ -2,6 +2,7 @@ import { RoomState } from "../constants";
 
 // API Rooms
 interface APIRoom {
+  floor: number;
   gender: string;
   roomName: string;
   isUsing: boolean;
@@ -18,6 +19,7 @@ const translateAPIRoom = (apiResult: APIRoom[]): RoomState[] => {
     ); // = ミリ秒 / 1000ミリ秒 / 60秒
 
     rooms.push({
+      floor: item.floor,
       gender: item.gender,
       roomId: item.roomName,
       roomName: item.roomName,

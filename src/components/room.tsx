@@ -4,6 +4,8 @@ import "./room.scss";
 
 export interface RoomProps {
   roomId?: string;
+  floor?: number;
+  gender?: string;
   roomName?: string;
   isUsing?: boolean;
   elapsedMinutes?: number;
