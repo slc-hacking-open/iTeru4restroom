@@ -34,7 +34,7 @@ const translateAPIRoom = (apiResult: APIRoom[]): RoomState[] => {
 export const fetchRooms = (locationName: string): Promise<RoomState[]> => {
   return new Promise((resolve, reject) => {
     fetch(
-      "https://ig3md7m262.execute-api.ap-northeast-1.amazonaws.com/rooms/新宿/"
+      "https://kysyl08g31.execute-api.ap-northeast-1.amazonaws.com/iTeru4RestRoom/新宿"  
     )
       .then(response => response.json())
       .then((json: APIRoom[]) => {

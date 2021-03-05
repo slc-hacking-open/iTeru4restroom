@@ -47,8 +47,8 @@ const Room: FC<RoomProps> = ({
       <img
         className="Room-icon"
         alt="開閉"
-        src={"/woman.svg"}
-        // src={isUsing ? "/close_128.svg" : "logo.svg"}
+        // src={"/woman.svg"}
+        src={isUsing ? "/woman.svg" : "man.svg"}
       />
     </div>
   );
